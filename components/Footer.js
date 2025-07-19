@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-16 h-1 bg-blue-600 mb-4"></div>
             </div>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Professional foam insulation and coating services in the Dallas-Fort Worth area. 
+              Professional foam insulation and coating services. 
               Quality work and exceptional customer service you can trust.
             </p>
             
