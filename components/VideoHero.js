@@ -15,7 +15,7 @@ export default function VideoHero() {
   const [showVideo, setShowVideo] = useState(true); // might disable if slow
 
   const videoUrl = 'https://www.youtube.com/embed/Y2Fbiufr4xQ';
-  const fallbackImage = '/images/foam-hero.jpg';
+  const fallbackImage = '/images/sec_con.jpg';
 
   // Detect mobile and slow connection
   useEffect(() => {
