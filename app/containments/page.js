@@ -246,13 +246,13 @@ export default function ContainmentPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {keyBenefits.map((benefit, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-                  <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-xl inline-block mb-6">
+              <div key={index} className="text-center group h-full">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 h-full flex flex-col">
+                  <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-xl inline-block mb-6 mx-auto">
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">{benefit.title}</h3>
-                  <p className="text-blue-100 leading-relaxed">{benefit.description}</p>
+                  <p className="text-blue-100 leading-relaxed flex-grow">{benefit.description}</p>
                 </div>
               </div>
             ))}
