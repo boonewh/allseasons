@@ -25,7 +25,7 @@ export default function Footer() {
                   <span className="text-white font-semibold">📞</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">940-458-9078</p>
+                  <p className="text-white font-semibold">432-438-5806</p>
                   <p className="text-gray-400 text-sm">Call us today for a free quote</p>
                 </div>
               </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                   <span className="text-white font-semibold">✉️</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">vanessa@allseasonsfoam.com</p>
+                  <p className="text-white font-semibold">jdrager@allseasonsfoam.com</p>
                   <p className="text-gray-400 text-sm">Get a quick response</p>
                 </div>
               </div>
@@ -57,73 +57,49 @@ export default function Footer() {
             <h4 className="text-xl font-bold text-white mb-6">Our Services</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Spray Foam Insulation
-                </Link>
+                  Secondary Containment Systems
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                   Protective Coatings
-                </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Commercial Projects
-                </Link>
+                  Industrial Coatings & Linings
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Residential Services
-                </Link>
+                  Pipe & Valve Coatings
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Energy Efficiency Solutions
-                </Link>
+                  Tank Coatings
+              </li>
+              <li>
+                Containment & Equipment Rentals
               </li>
             </ul>
           </div>
           
           {/* Quick Links & Social */}
           <div className="lg:col-span-4">
-            <h4 className="text-xl font-bold text-white mb-6">Connect With Us</h4>
-            
-            {/* Quick Links */}
-            <div className="mb-8">
-              <h5 className="text-white font-semibold mb-4">Quick Links</h5>
-              <div className="grid grid-cols-2 gap-2">
-                <Link href="/" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Home</Link>
-                <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">About Us</Link>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Services</Link>
-                <Link href="/contact" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Contact</Link>
-              </div>
-            </div>
+            <h4 className="text-xl font-bold text-white mb-6">Follow Us</h4>
             
             {/* Social Media */}
             <div>
-              <h5 className="text-white font-semibold mb-4">Follow Us</h5>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/AllSeasonsFoamInsulation/" 
                   className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
                   aria-label="Facebook"
                 >
                   <span className="text-white text-xl">f</span>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/company/all-seasons-foam-coatings-and-services" 
                   className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
                   <span className="text-white text-xl">in</span>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://youtu.be/Y2Fbiufr4xQ?si=sKTjLoxRS0OtDV0E" 
                   className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors duration-200"
                   aria-label="YouTube"
                 >

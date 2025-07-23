@@ -1,5 +1,6 @@
 import { ShieldCheckIcon, BeakerIcon, WrenchScrewdriverIcon, ClockIcon, TruckIcon, CheckIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Protective Coatings - All Seasons Foam Coatings & Services',
@@ -69,21 +70,27 @@ export default function CoatingsPage() {
               <p className="text-xl mb-8 leading-relaxed">
                 At All Seasons Foam Coatings & Services, we specialize in delivering high-performance protective coatings tailored to the demanding conditions of the oil and gas industry. With over 20 years of experience, our team has the expertise to apply a wide range of coatings that protect your assets, extend service life, and ensure regulatory compliance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
-                  Request Quote
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                  Learn More
-                </button>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/contact">
+                    <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
+                      Request Quote
+                    </button>
+                  </Link>
+                </div>
+                <a href="tel:+14324385806">
+                  <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                    Call 432-438-5806
+                  </button>
+                </a>
               </div>
             </div>
-            <div className="relative min-h-[500px]">
+            <div className="relative min-h-[700px]">
             <Image
-                src="/images/protective-coatings.jpg"
+                src="/images/prot-coating.jpg"
                 alt="All Season Construction foam coating operation"
                 fill
-                className="rounded-2xl object-contain"
+                className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
             />
             </div>
           </div>
@@ -145,9 +152,13 @@ export default function CoatingsPage() {
               </div>
             </div>
             <div className="relative">
-              {/* Image placeholder - before/after coating application */}
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold mb-4">
-                [Image: Before/after coating application comparison]
+            <div className="relative min-h-[300px]">
+              <Image
+                  src="/images/protective-coatings.jpg"
+                  alt="All Season Construction foam coating operation"
+                  fill
+                  className="rounded-2xl object-contain"
+              />
               </div>
               <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 rounded-xl">
                 <h3 className="text-2xl font-bold mb-4">Quality Guarantee</h3>
@@ -160,83 +171,31 @@ export default function CoatingsPage() {
         </div>
       </section>
 
-      {/* Applications Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-600 mb-6">Common Applications</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Our protective coatings are trusted across critical oilfield infrastructure
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Secondary containment system]
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Secondary Containment</h3>
-              <p className="text-gray-600">Spill prevention and environmental protection systems</p>
-            </div>
-            
-            <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Storage tank coating]
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Storage Tanks</h3>
-              <p className="text-gray-600">Internal and external tank protection systems</p>
-            </div>
-            
-            <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Pipeline coating application]
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Pipes & Valves</h3>
-              <p className="text-gray-600">Corrosion protection for critical flow systems</p>
-            </div>
-            
-            <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Industrial flooring coating]
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Industrial Floors</h3>
-              <p className="text-gray-600">Chemical-resistant flooring solutions</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 border-t-4 border-b-4 border-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              {/* Image placeholder - team applying coatings */}
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold">
-                [Image: Professional coating team at work]
-              </div>
-            </div>
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 border-t-4 border-b-4 border-black text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-16 items-center">
             <div className="text-white">
               <h2 className="text-5xl font-bold mb-8 leading-tight">Why All Seasons?</h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Two decades of oilfield experience means we understand your challenges and deliver solutions that work in the real world.
               </p>
-              <div className="grid grid-cols-1 gap-6">
-                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+              <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
+                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl text-left">
                   <ShieldCheckIcon className="h-8 w-8 text-white mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-white text-xl mb-2">Industry Expertise</h4>
                     <p className="text-blue-100">Deep understanding of oilfield conditions and requirements</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl text-left">
                   <WrenchScrewdriverIcon className="h-8 w-8 text-white mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-white text-xl mb-2">Proven Systems</h4>
                     <p className="text-blue-100">Time-tested coating solutions with documented performance</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+                <div className="flex items-start space-x-4 p-6 bg-white/10 backdrop-blur-sm rounded-xl text-left">
                   <TruckIcon className="h-8 w-8 text-white mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-white text-xl mb-2">Mobile Teams</h4>
@@ -258,12 +217,18 @@ export default function CoatingsPage() {
             Ready to protect your assets with proven coating solutions? Contact our team for a consultation on your specific application needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Request Quote
-            </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-              Call 940-458-9078
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
+                  Request Quote
+                </button>
+              </Link>
+            </div>
+            <a href="tel:+14324385806">
+              <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                Call 432-438-5806
+              </button>
+            </a>
           </div>
         </div>
       </section>

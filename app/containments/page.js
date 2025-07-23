@@ -1,5 +1,6 @@
 import { ShieldCheckIcon, BeakerIcon, WrenchScrewdriverIcon, ClockIcon, TruckIcon, CheckIcon, ExclamationTriangleIcon, CogIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Secondary Containment Solutions - All Seasons Foam Coatings & Services',
@@ -92,19 +93,28 @@ export default function ContainmentPage() {
               <p className="text-xl mb-8 leading-relaxed">
                 All Seasons Foam Coatings & Services is a trusted partner in secondary containment construction for the oil and gas industry. With decades of field experience, we build durable, compliant containment systems that protect your site, your team, and the environment.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
                   Request Quote
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                  Call 940-458-9078
-                </button>
-              </div>
+              </Link>
             </div>
-            <div className="relative min-h-[500px]">
-              <div className="bg-gray-300 rounded-2xl h-full flex items-center justify-center text-gray-600 text-lg font-semibold">
-                [Image: Aerial view of completed secondary containment system with tanks]
-              </div>
+            <a href="tel:+14324385806">
+              <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                Call 432-438-5806
+              </button>
+            </a>
+          </div>
+            </div>
+            <div className="relative min-h-[700px]">
+            <Image
+                src="/images/sec_con.jpg"
+                alt="All Season Construction foam coating operation"
+                fill
+                className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
+            />
             </div>
           </div>
         </div>
@@ -155,7 +165,7 @@ export default function ContainmentPage() {
         </div>
       </section>
 
-      {/* Applications Section */}
+      {/* Applications Section
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -199,7 +209,7 @@ export default function ContainmentPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Compliance & Standards Section */}
       <section className="py-20 bg-white">
@@ -220,8 +230,13 @@ export default function ContainmentPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold mb-4">
-                [Image: Compliance documentation and containment system]
+              <div className="relative min-h-[500px]">
+              <Image
+                  src="/images/containments.jpg"
+                  alt="All Season Construction foam coating operation"
+                  fill
+                  className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
+              />
               </div>
               <div className="bg-gradient-to-r from-green-500 to-green-700 text-white p-6 rounded-xl">
                 <h3 className="text-2xl font-bold mb-4">Compliance Assurance</h3>
@@ -265,15 +280,30 @@ export default function ContainmentPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold mb-4">
-                [Image: Containment construction process timeline]
+              <div className="relative rounded-2xl h-96 mb-4 overflow-hidden">
+                <Image
+                  src="/images/vid_grab.jpg"
+                  alt="Containment construction process timeline"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-300 rounded-xl h-32 flex items-center justify-center text-gray-600 text-sm font-semibold">
-                  [Before: Site prep]
+                <div className="relative rounded-xl h-32 overflow-hidden">
+                  <Image
+                    src="/images/before.jpg"
+                    alt="Before: Site preparation"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <div className="bg-gray-300 rounded-xl h-32 flex items-center justify-center text-gray-600 text-sm font-semibold">
-                  [After: Completed system]
+                <div className="relative rounded-xl h-32 overflow-hidden">
+                  <Image
+                    src="/images/allseasons_after.jpg"
+                    alt="After: Completed containment system"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -311,7 +341,7 @@ export default function ContainmentPage() {
       </section>
 
       {/* Emergency Services Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600 border-b-4 border-t-4 border-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="text-white">
@@ -334,9 +364,6 @@ export default function ContainmentPage() {
                 </div>
               </div>
               <div className="mt-8">
-                <button className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg">
-                  Emergency Hotline: 940-458-9078
-                </button>
               </div>
             </div>
             <div className="relative">
@@ -352,9 +379,12 @@ export default function ContainmentPage() {
       <section className="py-32 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="bg-gray-400 h-full w-full flex items-center justify-center text-gray-600 text-xl font-semibold">
-            [Background Image: Wide shot of completed containment facility at sunset]
-          </div>
+          <Image
+            src="/images/allseasons_after.jpg"
+            alt="After: Completed containment system"
+            fill
+            className="object-cover"
+          />
           {/* Dark overlay for text visibility */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -369,12 +399,18 @@ export default function ContainmentPage() {
             Don&apos;t let containment issues put your operations at risk. Contact All Seasons today for engineered solutions that protect your assets and keep you compliant.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Request Site Assessment
-            </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-              Call 940-458-9078
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
+                  Request Site Assessment
+                </button>
+              </Link>
+            </div>
+            <a href="tel:+14324385806">
+              <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                Call 432-438-5806
+              </button>
+            </a>
           </div>
         </div>
       </section>
