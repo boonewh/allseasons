@@ -18,10 +18,10 @@ export default function Navigation() {
   return (
     <>
       <div className="bg-blue-100 text-blue-900 text-sm py-1 px-4 text-right font-semibold">
-        📞 940-458-9078
+        📞 432-438-5806
       </div>
       <Disclosure as="nav" className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-black">
-        {({ open }) => (
+        {({ open, close }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between h-20">                     {/* Height of the nav area */}
@@ -80,6 +80,7 @@ export default function Navigation() {
                     key={item.name}
                     href={item.href}
                     className="block px-3 py-2 text-gray-700 hover:text-blue-600"
+                    onClick={() => close()} // Close the mobile menu when link is clicked
                   >
                     {item.name}
                   </Link>

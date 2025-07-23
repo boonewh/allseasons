@@ -1,6 +1,7 @@
 import VideoHero from '@/components/VideoHero'
 import { CheckIcon, ShieldCheckIcon, TruckIcon, ClockIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HomePage() {
   const services = [
@@ -209,7 +210,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Request Quote
+              Contact Us
+            </button>
+            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+              Call 940-458-9078
             </button>
           </div>
         </div>
