@@ -87,7 +87,7 @@ export default function CoatingsPage() {
             </div>
             <div className="relative min-h-[700px]">
             <Image
-                src="/images/prot-coating.jpg"
+                src="/images/protective_coatings_hero.jpg"
                 alt="All Season Construction foam coating operation"
                 fill
                 className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
