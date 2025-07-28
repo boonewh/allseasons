@@ -366,10 +366,13 @@ export default function ContainmentPage() {
               <div className="mt-8">
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold">
-                [Image: Emergency containment repair in progress]
-              </div>
+            <div className="relative min-h-[400px]">
+              <Image
+                src="/images/all-seasons-contain.jpg"
+                alt="All seasons emergency containment repair"
+                fill
+                className="rounded-2xl object-cover"
+              />
             </div>
           </div>
         </div>

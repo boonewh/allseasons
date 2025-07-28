@@ -209,12 +209,18 @@ export default function HomePage() {
             Contact us today for a consultation on your foam coating and containment needs. Let our 20+ years of experience work for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Contact Us
-            </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-              Call 940-458-9078
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  Contact Us
+                </button>
+              </Link>
+            </div>
+            <a href="tel:+14324385806">
+              <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                Call 432-438-5806
+              </button>
+            </a>
           </div>
         </div>
       </section>

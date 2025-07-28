@@ -25,8 +25,18 @@ export default function Footer() {
                   <span className="text-white font-semibold">📞</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">432-438-5806</p>
+                  <p className="text-white font-semibold">(432) 438-5806</p>
                   <p className="text-gray-400 text-sm">Call us today for a free quote</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-semibold">📠</span>
+                </div>
+                <div>
+                  <p className="text-white font-semibold">(940) 458-9073</p>
+                  <p className="text-gray-400 text-sm">Fax number</p>
                 </div>
               </div>
               
@@ -45,8 +55,20 @@ export default function Footer() {
                   <span className="text-white font-semibold">📍</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">6316 S County Rd 1185</p>
+                  <p className="text-white font-semibold">Field Office</p>
+                  <p className="text-gray-400 text-sm">6316 S County Rd 1185</p>
                   <p className="text-gray-400 text-sm">Midland, TX 79706</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-semibold">🏢</span>
+                </div>
+                <div>
+                  <p className="text-white font-semibold">Main Office</p>
+                  <p className="text-gray-400 text-sm">201 Railroad Ave</p>
+                  <p className="text-gray-400 text-sm">Sanger, TX 76266</p>
                 </div>
               </div>
             </div>

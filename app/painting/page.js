@@ -14,42 +14,42 @@ export default function PaintingPage() {
       description: "Internal linings and exterior coatings for maximum corrosion and chemical resistance in demanding environments.",
       icon: ShieldCheckIcon,
       features: ["Internal linings", "Exterior protection", "Chemical resistance", "Corrosion prevention"],
-      image: "photo1.jpg"
+      image: "tanks.jpg"
     },
     {
       title: "Pipe Spools & Racks", 
       description: "Shop or field-applied protective coatings designed to withstand abrasion and harsh weather conditions.",
       icon: WrenchScrewdriverIcon,
       features: ["Shop application", "Field coating", "Weather protection", "Abrasion resistance"],
-      image: "photo2.jpg"
+      image: "pipe-spools.jpg"
     },
     {
       title: "Rigs & Platforms",
       description: "Heavy-duty coatings engineered to perform in the harshest oilfield environments with constant use.",
       icon: CogIcon,
       features: ["Harsh environment coating", "Constant use durability", "Weather resistance", "Long-term protection"],
-      image: "photo3.jpg"
+      image: "oil-rig.jpg"
     },
     {
       title: "Equipment Skids",
       description: "Professional finishes that enhance equipment longevity while improving visibility and safety identification.",
       icon: TruckIcon,
       features: ["Longevity enhancement", "Visibility improvement", "Safety identification", "Professional finish"],
-      image: "photo4.jpg"
+      image: "skid.jpg"
     },
     {
       title: "Trailers & Support Equipment",
       description: "Clean, protective coatings that keep your mobile equipment field-ready and deployment-prepared.",
       icon: ClockIcon,
       features: ["Mobile equipment", "Field-ready finish", "Deployment prep", "Professional appearance"],
-      image: "photo5.jpg"
+      image: "trailers.jpg"
     },
     {
       title: "Structural Steel & More",
       description: "From containment walls to compressor stations—comprehensive coating solutions for any industrial structure.",
       icon: BeakerIcon,
       features: ["Containment walls", "Compressor stations", "Custom applications", "Complete coverage"],
-      image: "photo6.jpg"
+      image: "steel.jpg"
     }
   ];
 
@@ -118,7 +118,7 @@ export default function PaintingPage() {
             <div className="relative">
               <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src="/images/photo1.jpg"
+                  src="/images/painting.jpg"
                   alt="Industrial painting crew working on oil and gas equipment"
                   width={600}
                   height={400}
@@ -211,7 +211,7 @@ export default function PaintingPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-xl overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-300">
                   <Image
-                    src="/images/photo7.jpg"
+                    src="/images/painting2.jpg"
                     alt="Professional painting equipment and materials"
                     fill
                     className="object-cover"
@@ -219,7 +219,7 @@ export default function PaintingPage() {
                 </div>
                 <div className="relative h-64 rounded-xl overflow-hidden transform -rotate-2 hover:rotate-0 transition-transform duration-300 mt-8">
                   <Image
-                    src="/images/photo8.jpg"
+                    src="/images/allseasons_spray.jpg"
                     alt="Coating application in progress"
                     fill
                     className="object-cover"
@@ -271,7 +271,7 @@ export default function PaintingPage() {
       </section>
 
       {/* Before & After Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-10 bg-white border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-gray-600 mb-6">The All Seasons Difference</h2>
@@ -280,7 +280,7 @@ export default function PaintingPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="relative group">
               <div className="relative h-80 rounded-2xl overflow-hidden">
                 <Image
@@ -318,74 +318,8 @@ export default function PaintingPage() {
               </div>
               <p className="text-center mt-4 text-gray-600">Protected, professional finish</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Timeline */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-600 mb-6">Our Painting Process</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From surface preparation to final inspection, we follow proven steps to ensure lasting results
-            </p>
-          </div>
-          
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-blue-700 rounded-full"></div>
-            
-            <div className="space-y-12">
-              {[
-                {
-                  step: "1",
-                  title: "Surface Assessment & Preparation",
-                  description: "Thorough cleaning, surface preparation, and primer application for optimal adhesion",
-                  image: "photo11.jpg"
-                },
-                {
-                  step: "2", 
-                  title: "Professional Application",
-                  description: "Expert coating application using industry-approved techniques and equipment",
-                  image: "photo12.jpg"
-                },
-                {
-                  step: "3",
-                  title: "Quality Control & Inspection",
-                  description: "Comprehensive inspection and documentation to ensure coating integrity",
-                  image: "photo13.jpg"
-                }
-              ].map((process, index) => (
-                <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} gap-8`}>
-                  <div className="flex-1">
-                    <div className={`bg-white p-8 rounded-2xl shadow-lg ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4">{process.title}</h3>
-                      <p className="text-gray-600 leading-relaxed">{process.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="relative z-10">
-                    <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
-                      {process.step}
-                    </div>
-                  </div>
-                  
-                  <div className="flex-1">
-                    <div className="relative h-48 rounded-xl overflow-hidden">
-                      <Image
-                        src={`/images/${process.image}`}
-                        alt={`Step ${process.step}: ${process.title}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
       </section>
 
       {/* CTA Section */}

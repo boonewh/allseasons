@@ -1,5 +1,6 @@
 import { ShieldCheckIcon, BeakerIcon, WrenchScrewdriverIcon, ClockIcon, TruckIcon, CheckIcon, ExclamationTriangleIcon, SunIcon, LightBulbIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Equipment Rentals - All Seasons Foam Coatings & Services',
@@ -95,23 +96,31 @@ export default function RentalsPage() {
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Reliable Rental Equipment – Ready When You Are
               </h1>
+
               <p className="text-xl mb-8 leading-relaxed">
                 All Seasons Foam Coatings & Services offers a full line of rental equipment to support your operations across the oil and gas industry. Whether you&apos;re managing containment, fluid transfer, or jobsite logistics, we have the gear to keep your project moving—safely and efficiently.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
-                  Check Availability
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                  Call 940-458-9078
-                </button>
+                <Link href="/contact">
+                  <button className="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg">
+                    Check Availability
+                  </button>
+                </Link>
+                <a href="tel:+14324385806">
+                  <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                    Call 432-438-5806
+                  </button>
+                </a>
               </div>
-            </div>
-            <div className="relative min-h-[500px]">
-              <div className="bg-gray-300 rounded-2xl h-full flex items-center justify-center text-gray-600 text-lg font-semibold">
-                [Image: Fleet of rental equipment on job site - vacuum trailers, containment systems, light towers]
               </div>
-            </div>
+              <div className="relative min-h-[500px]">
+                <Image
+                  src="/images/restraint-1.jpg"
+                  alt="Fleet of rental equipment on job site - vacuum trailers, containment systems, light towers"
+                  fill
+                  className="rounded-2xl object-cover"
+                />
+              </div>
           </div>
         </div>
       </section>
@@ -173,32 +182,52 @@ export default function RentalsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Drive-over containment with trucks]
+              <div className="relative rounded-xl h-48 mb-6 overflow-hidden">
+                <Image
+                  src="/images/drive-over.jpg"
+                  alt="Drive-over containment with trucks"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Drive-Over Containment</h3>
               <p className="text-gray-600">Heavy equipment staging and spill prevention</p>
             </div>
             
             <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Vacuum trailer in operation]
+              <div className="relative rounded-xl h-48 mb-6 overflow-hidden">
+                <Image
+                  src="/images/vacuum-trailer.jpg"
+                  alt="Vacuum trailer in operation"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Vacuum Operations</h3>
               <p className="text-gray-600">Fluid recovery and transfer services</p>
             </div>
             
             <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Light towers illuminating night site]
+              <div className="relative rounded-xl h-48 mb-6 overflow-hidden">
+                <Image
+                  src="/images/Cooldown-2.jpg"
+                  alt="Climate-controlled cooling unit for crew comfort"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Site Lighting</h3>
-              <p className="text-gray-600">24/7 operations and safety illumination</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Cooling Units</h3>
+              <p className="text-gray-600">Climate-controlled crew comfort and safety</p>
             </div>
             
             <div className="text-center group">
-              <div className="bg-gray-300 rounded-xl h-48 mb-6 flex items-center justify-center text-gray-600 text-sm font-semibold group-hover:bg-gray-400 transition-colors">
-                [Image: Safety restraints securing equipment]
+              <div className="relative rounded-xl h-48 mb-6 overflow-hidden">
+                <Image
+                  src="/images/restraint-5.jpg"
+                  alt="Safety restraints securing equipment"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Safety Restraints</h3>
               <p className="text-gray-600">Secure tank and piping installations</p>
@@ -267,14 +296,13 @@ export default function RentalsPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center text-gray-600 text-lg font-semibold mb-4">
-                [Image: Equipment delivery truck arriving on job site]
-              </div>
-              <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 rounded-xl">
-                <h3 className="text-2xl font-bold mb-4">Nationwide Delivery</h3>
-                <p className="text-blue-100 leading-relaxed">
-                  Our mobile teams can deliver rental equipment anywhere your operations take you.
-                </p>
+              <div className="relative h-96 mb-4 rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/restraint-2.jpg"
+                  alt="Equipment delivery truck arriving on job site"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -285,9 +313,12 @@ export default function RentalsPage() {
       <section className="py-32 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="bg-gray-400 h-full w-full flex items-center justify-center text-gray-600 text-xl font-semibold">
-            [Background Image: Equipment yard with various rental equipment ready for deployment]
-          </div>
+          <Image
+            src="/images/restraint-4.jpg"
+            alt="Equipment yard with various rental equipment ready for deployment"
+            fill
+            className="object-cover"
+          />
           {/* Dark overlay for text visibility */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -302,12 +333,18 @@ export default function RentalsPage() {
             From containment to cleanup, lighting to logistics—get the rental equipment you need to keep your operation running smoothly.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Check Equipment Availability
-            </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-              Call 940-458-9078
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg border-2 border-black hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  Check Equipement Availability
+                </button>
+              </Link>
+            </div>
+            <a href="tel:+14324385806">
+              <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
+                Call 432-438-5806
+              </button>
+            </a>
           </div>
         </div>
       </section>

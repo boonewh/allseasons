@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
@@ -123,12 +124,12 @@ export default function VideoHero() {
           <p className="text-base md:text-m lg:text-lg max-w-2xl mb-6">
             See how we deliver results with professionalism, precision, and passion.
           </p>
-          <a
-            href="#services"
+          <Link
+            href="/contact"
             className="bg-blue-700 border-2 text-black px-6 py-3 rounded-full text-base md:text-lg font-semibold hover:bg-gray-200 transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
 

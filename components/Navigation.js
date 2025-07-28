@@ -18,7 +18,9 @@ export default function Navigation() {
   return (
     <>
       <div className="bg-blue-100 text-blue-900 text-sm py-1 px-4 text-right font-semibold">
-        📞 432-438-5806
+        <a href="tel:+14324385806" className="hover:text-blue-700 transition-colors">
+          📞 432-438-5806
+        </a>
       </div>
       <Disclosure as="nav" className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-black">
         {({ open, close }) => (
@@ -47,11 +49,7 @@ export default function Navigation() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`px-2 py-2 text-lg font-medium ${
-                        item.name === 'Contact'
-                          ? 'bg-blue-600 text-white border-2 border-black rounded-md hover:bg-black'
-                          : 'text-gray-700 hover:text-blue-600'
-                      }`}
+                      className="px-2 py-2 text-lg font-medium text-gray-700 hover:text-blue-600"
                     >
                       {item.name}
                     </Link>

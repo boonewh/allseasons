@@ -1,30 +1,18 @@
 'use client'
-import { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  })
+  const [state, handleSubmit] = useForm("myzpjkye");
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission (you can add email service later)
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! We\'ll get back to you soon.')
-  }
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
+  if (state.succeeded) {
+    return <p className="text-green-600 font-semibold">Thank you! We’ll get back to you soon.</p>
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Hidden subject for email notifications */}
+      <input type="hidden" name="_subject" value="All Seasons Foam Contact Form Submission" />
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
           Name *
@@ -34,8 +22,6 @@ export default function ContactForm() {
           name="name"
           id="name"
           required
-          value={formData.name}
-          onChange={handleChange}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
@@ -49,10 +35,9 @@ export default function ContactForm() {
           name="email"
           id="email"
           required
-          value={formData.email}
-          onChange={handleChange}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
       
       <div>
@@ -63,10 +48,58 @@ export default function ContactForm() {
           type="tel"
           name="phone"
           id="phone"
-          value={formData.phone}
-          onChange={handleChange}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+      </div>
+      
+      <div>
+        <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
+          Address
+        </label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+            City
+          </label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        
+        <div>
+          <label htmlFor="state" className="block text-sm font-medium text-gray-700 mb-2">
+            State
+          </label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        
+        <div>
+          <label htmlFor="postalCode" className="block text-sm font-medium text-gray-700 mb-2">
+            Postal Code
+          </label>
+          <input
+            type="text"
+            name="postalCode"
+            id="postalCode"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
       </div>
       
       <div>
@@ -78,14 +111,14 @@ export default function ContactForm() {
           id="message"
           rows={4}
           required
-          value={formData.message}
-          onChange={handleChange}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
       </div>
       
       <button
         type="submit"
+        disabled={state.submitting}
         className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors font-semibold"
       >
         Send Message
@@ -93,3 +126,4 @@ export default function ContactForm() {
     </form>
   )
 }
+

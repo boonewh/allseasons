@@ -22,18 +22,31 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">CONTACT INFO</h2>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div>
-                <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">Placeholder</p>
+                <h3 className="font-semibold text-lg mb-2">Phone</h3>
+                <p className="text-gray-700 text-lg">(432) 438-5806</p>
               </div>
+              
               <div>
-                <h3 className="font-semibold">Main Office</h3>
-                <p className="text-gray-600">Placeholder</p>
+                <h3 className="font-semibold text-lg mb-2">Fax</h3>
+                <p className="text-gray-700 text-lg">(940) 458-9073</p>
               </div>
+              
               <div>
-                <h3 className="font-semibold">Field Office</h3>
-                <p className="text-gray-600">Placeholder</p>
+                <h3 className="font-semibold text-lg mb-2">Field Office</h3>
+                <div className="text-gray-700 text-lg">
+                  <p>6316 S County Road 1185</p>
+                  <p>Midland, TX 79706</p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-lg mb-2">Main Office</h3>
+                <div className="text-gray-700 text-lg">
+                  <p>201 Railroad Ave</p>
+                  <p>Sanger, TX 76266</p>
+                </div>
               </div>
             </div>
           </div>
