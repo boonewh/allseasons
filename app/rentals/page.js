@@ -34,12 +34,6 @@ export default function RentalsPage() {
       features: ["Climate control", "Crew safety", "Heat protection", "Mobile comfort"]
     },
     {
-      title: "Light Tower Trailers",
-      description: "Portable lighting solutions for night work or low-light sites.",
-      icon: LightBulbIcon,
-      features: ["Portable lighting", "Night operations", "Site illumination", "Safety enhancement"]
-    },
-    {
       title: "Forklifts",
       description: "Versatile lift solutions for material handling on remote or rugged terrain.",
       icon: TruckIcon,

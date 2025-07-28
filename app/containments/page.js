@@ -53,7 +53,6 @@ export default function ContainmentPage() {
     "State and Local Environmental Regulations",
     "API 650 and API 653 Standards",
     "OSHA Safety Requirements",
-    "DOT Transportation Regulations"
   ];
 
   const keyBenefits = [
@@ -356,7 +355,7 @@ export default function ContainmentPage() {
                 </div>
                 <div className="flex items-center space-x-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
                   <CheckIcon className="h-6 w-6 text-white flex-shrink-0" />
-                  <span className="text-white text-lg">Rapid mobilization nationwide</span>
+                  <span className="text-white text-lg">Rapid mobilization</span>
                 </div>
                 <div className="flex items-center space-x-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
                   <CheckIcon className="h-6 w-6 text-white flex-shrink-0" />
