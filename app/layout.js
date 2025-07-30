@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import FormspreeWrapper from '@/components/FormspreeWrapper'
 
 export const metadata = {
-  title: 'All Season Construction - DFW Construction Services',
-  description: 'Professional construction services in the Dallas-Fort Worth area.',
+  title: 'All Season Foam & Services',
+  description: 'With 20+ years of expertise, All Seasons Foam Coatings & Services delivers reliable, long-lasting solutions to protect vital oil & gas infrastructure and keep operations safe and efficient.',
 }
 
 export default function RootLayout({ children }) {
