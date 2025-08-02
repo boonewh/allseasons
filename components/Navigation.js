@@ -32,7 +32,7 @@ export default function Navigation() {
                     <Link href="/" className="absolute -top-6 left-0">
                       <Image
                         src="/images/logo-all-seasons-foam.png"
-                        alt="All Season Construction Logo"
+                        alt="All Season Foam Logo"
                         width={110}
                         height={35}
                         className="object-contain"

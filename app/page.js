@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="relative">
             <Image
               src="/images/allseasons_spray.jpg"
-              alt="All Season Construction foam coating operation"
+              alt="All Season Foam coating operation"
               width={800}
               height={600}
               className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
@@ -88,7 +88,7 @@ export default function HomePage() {
             <div className="relative">
               <Image
                 src="/images/allseasons_after.jpg"
-                alt="All Season Construction foam coating operation"
+                alt="All Season Foam coating operation"
                 width={800}
                 height={600}
                 className="rounded-2xl object-cover w-full h-[250px] md:h-[350px] lg:h-[450px]"
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <div className="relative aspect-video rounded-xl overflow-hidden mb-8">
                   <iframe
                     src="https://www.youtube.com/embed/Y2Fbiufr4xQ"
-                    title="All Season Construction Equipment in Action"
+                    title="All Season Foam Coating Equipment in Action"
                     className="absolute inset-0 w-full h-full"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
