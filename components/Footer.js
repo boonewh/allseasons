@@ -149,7 +149,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-400 text-sm">
-                &copy; 2025 All Seasons Foam and Coatings. All rights reserved.
+                &copy; 2026 All Seasons Foam and Coatings. All rights reserved.
               </p>
             </div>
           </div>
