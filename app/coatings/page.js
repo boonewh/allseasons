@@ -3,8 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Protective Coatings - All Seasons Foam Coatings & Services',
-  description: 'High-performance protective coatings for oil and gas industry. Over 20 years of expertise in polyurea, epoxy, urethane, and specialty coating systems.',
+  title: 'Protective Coatings Midland TX | Polyurea & Epoxy | Permian Basin',
+  description: 'Expert protective coatings in Midland, Odessa & Permian Basin. 20+ years experience in polyurea, epoxy, urethane coatings for oil & gas. Tank linings, pipe coatings & more. Call (432) 438-5806',
+  keywords: 'protective coatings Midland TX, polyurea coatings Permian Basin, epoxy coatings Odessa, tank coatings West Texas, industrial coatings oil and gas, urethane coatings Midland',
+  openGraph: {
+    title: 'Protective Coatings Midland TX | Polyurea & Epoxy | Permian Basin',
+    description: 'Expert protective coatings for oil & gas industry in Midland, Odessa & Permian Basin.',
+    url: 'https://www.allseasonsfoam.com/coatings',
+  },
 }
 
 export default function CoatingsPage() {

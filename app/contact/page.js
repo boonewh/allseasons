@@ -1,8 +1,14 @@
 import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
-  title: 'Contact Us - All Season Construction',
-  description: 'Get in touch for your construction project quote.',
+  title: 'Contact All Seasons Foam | Midland TX | (432) 438-5806',
+  description: 'Contact All Seasons Foam Coatings & Services in Midland, TX. Serving the Permian Basin oil & gas industry. Field office in Midland, main office in Sanger. Get a free quote today!',
+  keywords: 'contact All Seasons Foam, Midland TX foam coatings, Permian Basin coatings quote, oil and gas services Midland, coatings contractor Odessa TX',
+  openGraph: {
+    title: 'Contact All Seasons Foam | Midland TX | (432) 438-5806',
+    description: 'Get in touch with All Seasons Foam Coatings & Services. Serving Midland, Odessa & the Permian Basin.',
+    url: 'https://www.allseasonsfoam.com/contact',
+  },
 }
 
 export default function ContactPage() {

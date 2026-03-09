@@ -1,0 +1,19 @@
+# All Seasons Foam & Services - robots.txt
+# https://www.allseasonsfoam.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://www.allseasonsfoam.com/sitemap.xml
+
+# Common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

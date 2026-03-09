@@ -3,8 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Secondary Containment Solutions - All Seasons Foam Coatings & Services',
-  description: 'Engineered secondary containment systems for oil and gas operations. SPCC and EPA compliant solutions with 20+ years of field experience.',
+  title: 'Secondary Containment Midland TX | SPCC Compliant | Permian Basin',
+  description: 'SPCC & EPA compliant secondary containment in Midland, Odessa & Permian Basin. Tank batteries, wellheads, chemical storage. 20+ years serving oil & gas. Call (432) 438-5806',
+  keywords: 'secondary containment Midland TX, SPCC containment Permian Basin, tank containment Odessa, EPA containment West Texas, wellhead containment Midland, spill containment oil and gas',
+  openGraph: {
+    title: 'Secondary Containment Midland TX | SPCC Compliant | Permian Basin',
+    description: 'SPCC & EPA compliant secondary containment systems for oil & gas in Midland, Odessa & Permian Basin.',
+    url: 'https://www.allseasonsfoam.com/containments',
+  },
 }
 
 export default function ContainmentPage() {

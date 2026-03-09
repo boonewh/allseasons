@@ -3,8 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Equipment Rentals - All Seasons Foam Coatings & Services',
-  description: 'Reliable rental equipment for oil and gas operations. Drive-over containment, vacuum trailers, safety restraints, and more. Ready when you are.',
+  title: 'Equipment Rentals Midland TX | Containment & Vacuum Trailers | Permian Basin',
+  description: 'Equipment rentals in Midland, Odessa & Permian Basin. Drive-over containment, vacuum trailers, safety restraints, forklifts for oil & gas. Fast delivery. Call (432) 438-5806',
+  keywords: 'equipment rentals Midland TX, vacuum trailer rental Permian Basin, containment rental Odessa, forklift rental West Texas, safety restraints rental Midland, oilfield equipment rental',
+  openGraph: {
+    title: 'Equipment Rentals Midland TX | Containment & Vacuum Trailers | Permian Basin',
+    description: 'Equipment rentals for oil & gas operations in Midland, Odessa & Permian Basin.',
+    url: 'https://www.allseasonsfoam.com/rentals',
+  },
 }
 
 export default function RentalsPage() {

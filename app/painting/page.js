@@ -3,8 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Industrial Painting Services - All Seasons Foam Coatings & Services',
-  description: 'Professional industrial painting for oil and gas operations. High-performance coatings for tanks, vessels, pipes, and equipment. Oilfield tough quality.',
+  title: 'Industrial Painting Midland TX | Oil & Gas Equipment | Permian Basin',
+  description: 'Professional industrial painting in Midland, Odessa & Permian Basin. Tanks, vessels, pipes, rigs & equipment painting for oil & gas. 20+ years experience. Call (432) 438-5806',
+  keywords: 'industrial painting Midland TX, oil and gas painting Permian Basin, tank painting Odessa, equipment painting West Texas, rig painting Midland, pipe painting Permian Basin',
+  openGraph: {
+    title: 'Industrial Painting Midland TX | Oil & Gas Equipment | Permian Basin',
+    description: 'Expert industrial painting for oil & gas equipment in Midland, Odessa & Permian Basin.',
+    url: 'https://www.allseasonsfoam.com/painting',
+  },
 }
 
 export default function PaintingPage() {
