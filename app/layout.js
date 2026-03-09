@@ -39,22 +39,30 @@ export const metadata = {
   },
 }
 
-export default function RootLayout({ children }) {
-  return (
+ return (
     <html lang="en">
       <head>
-        <LocalBusinessSchema />
         <Script src="https://enterprise52.com/js/813387.js" strategy="afterInteractive" />
         <noscript><img alt="" src="https://enterprise52.com/813387.png" style={{display:'none'}} /></noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
       </head>
-      <body className="min-h-screen flex flex-col">
-        <Navigation />
-        <FormspreeWrapper>
-          <main className="flex-grow">{children}</main>
-        </FormspreeWrapper>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
 
