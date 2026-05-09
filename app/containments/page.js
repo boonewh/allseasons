@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Secondary Containment Midland TX | SPCC Compliant | Permian Basin',
-  description: 'SPCC & EPA compliant secondary containment in Midland, Odessa & Permian Basin. Tank batteries, wellheads, chemical storage. 20+ years serving oil & gas. Call (432) 438-5806',
+  description: 'SPCC & EPA compliant secondary containment in Midland, Odessa & Permian Basin. Tank batteries, wellheads, chemical storage. 20+ years serving oil & gas. Call (877) 420-7575',
   keywords: 'secondary containment Midland TX, SPCC containment Permian Basin, tank containment Odessa, EPA containment West Texas, wellhead containment Midland, spill containment oil and gas',
   openGraph: {
     title: 'Secondary Containment Midland TX | SPCC Compliant | Permian Basin',
@@ -106,9 +106,9 @@ export default function ContainmentPage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>
@@ -414,9 +414,9 @@ export default function ContainmentPage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>

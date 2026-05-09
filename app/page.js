@@ -216,9 +216,9 @@ export default function HomePage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>

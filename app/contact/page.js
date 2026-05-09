@@ -1,11 +1,11 @@
 import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
-  title: 'Contact All Seasons Foam | Midland TX | (432) 438-5806',
+  title: 'Contact All Seasons Foam | Midland TX | (877) 420-7575',
   description: 'Contact All Seasons Foam Coatings & Services in Midland, TX. Serving the Permian Basin oil & gas industry. Field office in Midland, main office in Sanger. Get a free quote today!',
   keywords: 'contact All Seasons Foam, Midland TX foam coatings, Permian Basin coatings quote, oil and gas services Midland, coatings contractor Odessa TX',
   openGraph: {
-    title: 'Contact All Seasons Foam | Midland TX | (432) 438-5806',
+    title: 'Contact All Seasons Foam | Midland TX | (877) 420-7575',
     description: 'Get in touch with All Seasons Foam Coatings & Services. Serving Midland, Odessa & the Permian Basin.',
     url: 'https://www.allseasonsfoam.com/contact',
   },
@@ -31,7 +31,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                <p className="text-gray-700 text-lg">(432) 438-5806</p>
+                <p className="text-gray-700 text-lg">(877) 420-7575</p>
               </div>
               
               <div>

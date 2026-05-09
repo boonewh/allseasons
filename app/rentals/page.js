@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Equipment Rentals Midland TX | Containment & Vacuum Trailers | Permian Basin',
-  description: 'Equipment rentals in Midland, Odessa & Permian Basin. Drive-over containment, vacuum trailers, safety restraints, forklifts for oil & gas. Fast delivery. Call (432) 438-5806',
+  description: 'Equipment rentals in Midland, Odessa & Permian Basin. Drive-over containment, vacuum trailers, safety restraints, forklifts for oil & gas. Fast delivery. Call (877) 420-7575',
   keywords: 'equipment rentals Midland TX, vacuum trailer rental Permian Basin, containment rental Odessa, forklift rental West Texas, safety restraints rental Midland, oilfield equipment rental',
   openGraph: {
     title: 'Equipment Rentals Midland TX | Containment & Vacuum Trailers | Permian Basin',
@@ -106,9 +106,9 @@ export default function RentalsPage() {
                     Check Availability
                   </button>
                 </Link>
-                <a href="tel:+14324385806">
+                <a href="tel:+18774207575">
                   <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                    Call 432-438-5806
+                    Call (877) 420-7575
                   </button>
                 </a>
               </div>
@@ -340,9 +340,9 @@ export default function RentalsPage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>

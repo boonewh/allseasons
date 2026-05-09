@@ -25,7 +25,7 @@ export default function Footer() {
                   <span className="text-white font-semibold">📞</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">(432) 438-5806</p>
+                  <p className="text-white font-semibold">(877) 420-7575</p>
                   <p className="text-gray-400 text-sm">Call us today for a free quote</p>
                 </div>
               </div>

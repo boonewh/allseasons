@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Industrial Painting Midland TX | Oil & Gas Equipment | Permian Basin',
-  description: 'Professional industrial painting in Midland, Odessa & Permian Basin. Tanks, vessels, pipes, rigs & equipment painting for oil & gas. 20+ years experience. Call (432) 438-5806',
+  description: 'Professional industrial painting in Midland, Odessa & Permian Basin. Tanks, vessels, pipes, rigs & equipment painting for oil & gas. 20+ years experience. Call (877) 420-7575',
   keywords: 'industrial painting Midland TX, oil and gas painting Permian Basin, tank painting Odessa, equipment painting West Texas, rig painting Midland, pipe painting Permian Basin',
   openGraph: {
     title: 'Industrial Painting Midland TX | Oil & Gas Equipment | Permian Basin',
@@ -114,9 +114,9 @@ export default function PaintingPage() {
                     </button>
                   </Link>
                 </div>
-                <a href="tel:+14324385806">
+                <a href="tel:+18774207575">
                   <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                    Call 432-438-5806
+                    Call (877) 420-7575
                   </button>
                 </a>
               </div>
@@ -351,9 +351,9 @@ export default function PaintingPage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>

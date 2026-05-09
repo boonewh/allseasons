@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Protective Coatings Midland TX | Polyurea & Epoxy | Permian Basin',
-  description: 'Expert protective coatings in Midland, Odessa & Permian Basin. 20+ years experience in polyurea, epoxy, urethane coatings for oil & gas. Tank linings, pipe coatings & more. Call (432) 438-5806',
+  description: 'Expert protective coatings in Midland, Odessa & Permian Basin. 20+ years experience in polyurea, epoxy, urethane coatings for oil & gas. Tank linings, pipe coatings & more. Call (877) 420-7575',
   keywords: 'protective coatings Midland TX, polyurea coatings Permian Basin, epoxy coatings Odessa, tank coatings West Texas, industrial coatings oil and gas, urethane coatings Midland',
   openGraph: {
     title: 'Protective Coatings Midland TX | Polyurea & Epoxy | Permian Basin',
@@ -84,9 +84,9 @@ export default function CoatingsPage() {
                     </button>
                   </Link>
                 </div>
-                <a href="tel:+14324385806">
+                <a href="tel:+18774207575">
                   <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                    Call 432-438-5806
+                    Call (877) 420-7575
                   </button>
                 </a>
               </div>
@@ -230,9 +230,9 @@ export default function CoatingsPage() {
                 </button>
               </Link>
             </div>
-            <a href="tel:+14324385806">
+            <a href="tel:+18774207575">
               <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
-                Call 432-438-5806
+                Call (877) 420-7575
               </button>
             </a>
           </div>

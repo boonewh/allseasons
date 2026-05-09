@@ -18,8 +18,8 @@ export default function Navigation() {
   return (
     <>
       <div className="bg-blue-100 text-blue-900 text-sm py-1 px-4 text-right font-semibold">
-        <a href="tel:+14324385806" className="hover:text-blue-700 transition-colors">
-          📞 432-438-5806
+        <a href="tel:+18774207575" className="hover:text-blue-700 transition-colors">
+          📞 (877) 420-7575
         </a>
       </div>
       <Disclosure as="nav" className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-black">
