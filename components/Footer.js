@@ -45,7 +45,7 @@ export default function Footer() {
                   <span className="text-white font-semibold">✉️</span>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">jdrager@allseasonsfoam.com</p>
+                  <p className="text-white font-semibold">rachel@allseasonsfoam.com</p>
                   <p className="text-gray-400 text-sm">Get a quick response</p>
                 </div>
               </div>
