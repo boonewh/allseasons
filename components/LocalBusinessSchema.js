@@ -10,7 +10,7 @@ export default function LocalBusinessSchema() {
     "description": "Professional foam coatings, secondary containment, and industrial painting services for the oil and gas industry. Serving the Permian Basin with 20+ years of experience.",
     "url": "https://www.allseasonsfoam.com",
     "telephone": "+18774207575",
-    "email": "jdrager@allseasonsfoam.com",
+    "email": "rachel@allseasonsfoam.com",
     "priceRange": "$$",
     "address": [
       {
