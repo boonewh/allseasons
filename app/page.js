@@ -164,14 +164,13 @@ export default function HomePage() {
             <div className="relative">
               <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8">
                 <div className="relative aspect-video rounded-xl overflow-hidden mb-8">
-                  <iframe
-                    src="https://www.youtube.com/embed/Y2Fbiufr4xQ"
-                    title="All Season Foam Coating Equipment in Action"
-                    className="absolute inset-0 w-full h-full"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <Image
+                    src="/images/containments.jpg"
+                    alt="Secondary containment system at an oilfield site"
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                   <h3 className="text-2xl font-bold mb-4 text-white">Field-Ready and Nationwide</h3>
