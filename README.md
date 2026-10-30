@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Maintained runtime and checks
+
+Use Node24.22.1 and npm11.17.0 (see `.node-version`/`package.json`).
+Run `npm ci`, `npm run lint`, `npm run build`, then
+`npx playwright install chromium` and `npm run check:upgrade`.
+The browser checks intercept every Formspree submission and stub tracking;
+they never create a real inquiry. See [maintenance notes](docs/SECURITY-MAINTENANCE-2026-10.md).
+
 ## Getting Started
 
 First, run the development server:

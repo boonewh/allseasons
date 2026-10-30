@@ -116,6 +116,8 @@ export default function ContactForm() {
         <ValidationError prefix="Message" field="message" errors={state.errors} />
       </div>
       
+      <ValidationError errors={state.errors} role="alert" className="text-red-600" />
+
       <button
         type="submit"
         disabled={state.submitting}
