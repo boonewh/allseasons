@@ -45,7 +45,11 @@ export default function RootLayout({ children }) {
       <head>
         <LocalBusinessSchema />
         <Script src="https://enterprise52.com/js/813387.js" strategy="afterInteractive" />
-        <noscript><img alt="" src="https://enterprise52.com/813387.png" style={{display:'none'}} /></noscript>
+        <noscript>
+          {/* The tracking provider requires an unoptimized, raw noscript pixel. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img alt="" src="https://enterprise52.com/813387.png" style={{display:'none'}} />
+        </noscript>
       </head>
       <body className="min-h-screen flex flex-col">
         <Navigation />

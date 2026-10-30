@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Preserve the site's original font stack across Tailwind's default change. */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /* Custom styles if needed */
 .scroll-smooth {
   scroll-behavior: smooth;
